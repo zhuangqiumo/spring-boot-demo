@@ -1,15 +1,21 @@
 #!/bin/sh
 echo "begin starting....."
 
-# cd /opt/fit2cloud-demo
+
 echo going to start app
-nohup python -m SimpleHTTPServer 8080 > log.txt 2>&1 &
+
+
+cd ..
+nohup java -Dfile.encoding=utf-8 -Xmx512m -cp . -jar spring-boot-demo-0.0.1-SNAPSHOT.jar --server.port=8088 > log.txt 2>&1 &
+
+
 echo app started!
-ps aux | grep SimpleHTTPServer | grep -v grep
+ps aux | grep spring-boot-demo | grep -v grep
 
 
 echo "end start."
 
+port=8088
 
 function open_port()
 {
