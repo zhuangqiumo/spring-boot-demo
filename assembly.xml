@@ -10,13 +10,13 @@
 	<files>
 		<file>
 			<source>${project.build.directory}/spring-boot-demo-0.0.1-SNAPSHOT.jar</source>
-			<destName>spring-boot-demo-0.0.1-SNAPSHOT.jar</destName>
+			<destName>spring-boot-demo/spring-boot-demo-0.0.1-SNAPSHOT.jar</destName>
 		</file>
 	</files>
 	<fileSets>
 		<fileSet>
 			<directory>${project.basedir}</directory>
-			<outputDirectory>/</outputDirectory>
+			<outputDirectory>/spring-boot-demo</outputDirectory>
 			<useDefaultExcludes>true</useDefaultExcludes>
 			<excludes>
 				<exclude>**/*.log</exclude>
