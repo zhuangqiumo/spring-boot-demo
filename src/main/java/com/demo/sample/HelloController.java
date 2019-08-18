@@ -8,7 +8,7 @@ public class HelloController {
 
     @RequestMapping("/")
     public String index() {
-        return "Hello World~~g";
+        return "Hello World~~20190818";
     }
 
 }
